@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple, modern and responsive calculator web app.">
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>My Calculator</h1>
+    <input type="text" id="display" value="0" aria-label="Calculator display" readonly>
+
+    <div class="buttons">
+      <button class="special" onclick="clearDisplay()">C</button>
+      <button class="special" onclick="deleteLast()" aria-label="Delete last character">⌫</button>
+      <button class="operator" onclick="addValue('%')">%</button>
+      <button class="operator" onclick="addValue('/')">÷</button>
+
+      <button onclick="addValue('7')">7</button>
+      <button onclick="addValue('8')">8</button>
+      <button onclick="addValue('9')">9</button>
+      <button class="operator" onclick="addValue('*')">×</button>
+
+      <button onclick="addValue('4')">4</button>
+      <button onclick="addValue('5')">5</button>
+      <button onclick="addValue('6')">6</button>
+      <button class="operator" onclick="addValue('-')">−</button>
+
+      <button onclick="addValue('1')">1</button>
+      <button onclick="addValue('2')">2</button>
+      <button onclick="addValue('3')">3</button>
+      <button class="operator" onclick="addValue('+')">+</button>
+
+      <button onclick="addValue('00')">00</button>
+      <button onclick="addValue('0')">0</button>
+      <button onclick="addValue('.')">.</button>
+      <button class="equal" onclick="calculate()">=</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
